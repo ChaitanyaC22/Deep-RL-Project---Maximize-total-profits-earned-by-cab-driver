@@ -21,11 +21,13 @@ You can download the MDP from below. The major simplifying assumptions are also 
 
 In this project, you need to create the environment and an RL agent that learns to choose the best request. You need to train your agent using **vanilla Deep Q-learning (DQN)** only and NOT a double DQN. You have learnt about the two architectures of DQN (shown below) - you are free to choose any of these.
 
-There’s a renowned paper called ‘**Deep Reinforcement Learning for List-wise Recommendations**’ (Refer to 'Research Paper_Deep_RL_for_List-wise_Recommendations.pdf' file) by Xiangyu Zhao, Liang Zhang, Zhuoye Ding. They have mentioned a few recommendations on how to select the Q-network architecture. You can download the paper from below (refer to the highlighted section 1.2 - Architecture Selection). But referring to the paper is an **optional part** of this project.
+There’s a renowned paper called ‘**Deep Reinforcement Learning for List-wise Recommendations**’ by Xiangyu Zhao, Liang Zhang, Zhuoye Ding. They have mentioned a few recommendations on how to select the Q-network architecture. (Refer to 'Research Paper_Deep_RL_for_List-wise_Recommendations.pdf' file.)
 
-![](DQN_Architectures.png)
 
-It’s up to you to choose the Q-network architecture. We have provided you with the logic files for both the network architectures (containing some skeleton code). You can download the zip file from below. It has four files:
+![](DQN_Architectures.PNG)
+
+
+It’s up to you to choose the Q-network architecture. You have been provided with the logic files for both the network architectures (containing some skeleton code). You can download the zip file from below. It has four files:
 
 -   Environment file - Env.py
     
@@ -44,9 +46,6 @@ It’s up to you to choose the Q-network architecture. We have provided you wit
     
     -   Training depends purely on the epsilon-function you choose. If the  decays fast, it won’t let your model explore much and the Q-values will converge early but to suboptimal values. If  decays slowly, your model will converge slowly. We recommend that you try converging the Q-values in 4-6 hrs.  We’ve created a sample \-decay function at the end of the Agent file (Jupyter notebook) that will converge your Q-values in ~5 hrs. Try building a similar one for your Q-network.
         
-    -   In the Agent file, we’ve provided the code skeleton. Using this structure is not necessary though.
-        
-
            You have to **submit your final DQN model** as a pickle file as well.
 
 3.  **Convergence**\- You need to converge your results. The Q-values may be suboptimal since the agent won't be able to explore much in 5-6 hours of simulation. But it is important that your Q-values converge. There are two ways to check the convergence of the DQN model:
@@ -71,19 +70,13 @@ It’s up to you to choose the Q-network architecture. We have provided you wit
 5.  For a Windows 64-bit system, and with an 8GB RAM, it takes around 1 hour to train for 1000 episodes with the average length of episodes 100.
     
 
-For all the plumbing code, you can refer to the code used in the Inventory Management demo.
-
 ## **Submission**
 
-You need to submit **one zip file** containing the following three files for evaluation:
+You need to submit **one zip file** containing the following three files:
 
 -   the environment file: ‘Env.py’
     
 -   the agent’s learning file: ‘Agent\_Architecture1.ipynb’ **OR** Agent\_Architecture2.ipynb
     
 -   The final DQN model as a pickle file
-    
 
-## Additional Content - Soft Skills:
-
-Navigate [here](https://learn.upgrad.com/v/course/587/module/47980) to access the soft skills content related to Effective Speaking.
