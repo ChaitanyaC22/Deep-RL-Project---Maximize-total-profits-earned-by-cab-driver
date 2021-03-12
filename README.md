@@ -81,3 +81,7 @@ You need to submit **one zip file** containing the following three files:
     
 -   The final DQN model as a pickle file
 
+
+## Jupyter Notebook Viewer
+If you are unable to view or load the jupyter IPython notebook via Github, please click on this [link](https://nbviewer.jupyter.org/github/ChaitanyaC22/Deep-RL-Project---Maximize-total-profits-earned-by-cab-driver/blob/chai_main/Agent_Architecture2_%28Input_State_only%29.ipynb).
+Thank you!
